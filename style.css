@@ -16,3 +16,7 @@ body {
   padding: 1rem;
   background-color: #eee;
 }
+
+.delete-person {
+  color: tomato;
+}
