@@ -1,3 +1,5 @@
+// DATABASE
+
 async function sendData(url = '', data = {}, method = "POST") {
   const response = await fetch(url, {
     method,
@@ -8,7 +10,6 @@ async function sendData(url = '', data = {}, method = "POST") {
   });
   return response.json();
 }
-
 
 async function addPerson(personObj) {
   return await sendData("https://jsonbox.io/box_4c8006a81a7017b9e6cc", personObj)
@@ -26,7 +27,7 @@ async function getPeople() {
 
 
 
-// queue code
+// app code
 let formElem = document.querySelector("form");
 let personsNameInput = document.querySelector(".persons-name");
 let queueElem = document.querySelector(".queue");
